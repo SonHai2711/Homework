@@ -1,0 +1,356 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-image: url(./image\(1\).png);
+  min-height: 22vh;
+  background-repeat: no-repeat;
+  background-size: 100% 48%;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100vh;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 50px;
+  font-weight: 500;
+  background-color: #F77E23;
+  background-clip: text;
+  color: transparent;
+  margin-left: -400px;
+  
+}
+
+nav ul{
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-left: 50px;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+
+nav a span{
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #FF6F28);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover span {
+  transform: translateY(-3px);
+  display: inline-block;
+  color: #FF6F28;
+}    
+
+.search{
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  margin-right: -400px;
+}
+
+.icon{
+  margin-right: 20px;
+  font-size: 35px;
+  font-weight: 90px;
+  position: relative;
+}
+
+.icon:hover{
+  transform: translateY(-4px);
+  display: inline-block;
+  color: #FF6F28;
+}
+
+.style{
+  margin-right: 20px;
+  font-size: 30px;
+  position: relative;
+}
+
+.style:hover{
+  transform: translateY(-5px);
+  display: inline-block;
+  color: #FF6F28;
+}
+
+.button{
+  padding: 8px 15px;
+  font-size: 20px;
+  color: #FF6F28;
+  border-radius: 5px;
+  background: white;
+  border: none;
+  outline: none;
+}
+
+.button:hover{
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;;
+}
+
+/*----------------------------main----------------------------*/
+
+main{
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+  flex-wrap: wrap;
+}
+
+.content{
+  font-size: 29px;
+  color: white;
+}
+
+.content h1{
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.content p{
+  font-weight: 30px;
+}
+
+.start{
+  padding: 8px 15px;
+  font-size: 15px;
+  color: white;
+  border-radius: 5px;
+  background: #FF6F28;
+  border: none;
+  outline: none;
+  width: 162px;
+  height: 60px;
+}
+
+.start:hover{
+  transform: translateZ(-15px);
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+/*------------------------------features------------------------------*/
+.features{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: -1%;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  height: 15%;
+  width: 50%;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  filter: drop-shadow(0 21px 97px #CFCFCF40);
+}
+
+.features > .feature{
+  color: #000000;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  gap:1em;
+  transition: all 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.features > .feature::after{
+  background:#FF6F28;
+  content: "";
+  width: 0%;
+  left: 10%;
+  bottom: -5px;
+  height: 4%;
+  position: absolute;
+  transition: all 0.3;
+}
+
+.features > .feature:hover::after{
+  width: 100%;
+}
+
+.features > .feature:hover{
+  transform: translateY(-4px);
+  display: inline-block;
+  color: #FF6F28;
+}
+
+.features > .icons{
+  margin-right: -150px;
+  border-radius: 100px;
+}
+
+.features > .icons:hover{
+  transform: translateY(-5px);
+}
+
+/*----------------------Cartegories----------------------*/
+
+.Cartegories{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap:5em;
+  width: auto;
+  height: 90vh;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:1em;
+}
+
+.title{
+  color:black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding:1em;
+  font-size: 70px;
+}
+
+.wrapper_main_cards > .seeAll {
+    color:#F77E23;
+    border:none;
+    background:none;
+    font-size: 30px;
+    transition: all 0.3 ease;
+    position: relative;
+    margin-left: 1800px;
+    height: 10%;
+}
+.wrapper_main_cards > .seeAll:hover {
+    color: #45a049;
+    text-decoration: underline;
+}
+.cards {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap:2em;
+    position: relative;
+}
+.leftArrow {
+    font-size: 20px;
+    position: absolute;
+    background-color: #ff7028;
+    left:10px;
+    top:40%;
+    z-index: 10;
+    border-radius: 50%;
+    margin-left: 13.7%;
+    padding: .8em;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.leftArrow:hover {
+  background-color: #45a049;
+}
+
+.rightArrow {
+    font-size: 20px;
+    transition: all 0.2s ease;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #FF6F28;
+    right:10px;
+    top: 46.7%;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 50%;
+    margin-right: 12%;
+    padding:.8em;
+    cursor: pointer;
+}
+
+.rightArrow:hover{
+  background-color: #45a049;
+}
+
+.card {
+    position: relative;
+    list-style: none;
+}
+.card > h2 {
+    color: #FFFFFF;
+    position: absolute;
+    bottom:.5em;
+    left: .5em;
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "Poppins",sans-serif;
+    transition: all 0.3 ease;
+}
+
+.card > h2:hover{
+  color: #FF6F28;
+}
+
+.img_card_main {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.img_card_main > img {
+    object-fit:cover;
+    display: inline-block;
+    width: 400px;
+    height: 550px;
+    transition: all 0.5s;
+    filter: brightness(40%);
+    border-radius: 12px;
+}
+.img_card_main:hover > img {
+    filter: brightness(100%);
+    transform: scale(1.05);
+}
